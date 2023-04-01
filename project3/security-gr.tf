@@ -1,7 +1,7 @@
 resource "aws_security_group" "allow_ssh_and_http" {
   name_prefix = "instance_sg"
 
-  vpc_id      = "vpc-0eab558bd77523d2e"
+  vpc_id = "vpc-0eab558bd77523d2e"
 
   ingress {
     description = "SSH"

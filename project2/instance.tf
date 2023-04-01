@@ -18,7 +18,7 @@ resource "aws_instance" "aid-instance1" {
 }
 
 resource "aws_instance" "aid-instance2" {
-  ami           = data.aws_ami.amazon-linux-2.id
+  ami           = "ami-0557a15b87f6559cf"
   subnet_id     = aws_subnet.my-public-subnet.id
   instance_type = var.instance_type
   user_data = file("entry-script.sh")
